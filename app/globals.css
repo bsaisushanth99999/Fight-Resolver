@@ -24,3 +24,75 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Clerk panels: force high-contrast light surfaces for readability */
+.cl-card,
+.cl-modalContent,
+.cl-userPreviewMainIdentifier,
+.cl-organizationPreviewMainIdentifier,
+.cl-navbarButton,
+.cl-menuItem,
+.cl-internal-b3fm6y {
+  color: #0f172a !important;
+}
+
+.cl-card,
+.cl-modalContent,
+.cl-userButtonPopoverCard,
+.cl-organizationSwitcherPopoverCard {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+.cl-formFieldInput,
+.cl-searchFieldInput {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.cl-menuItem:hover,
+.cl-navbarButton:hover {
+  background: #e2e8f0 !important;
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    padding: 12px 14px !important;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .topbar-brand {
+    font-size: 15px !important;
+    width: 100%;
+  }
+
+  .topbar-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dashboard-page,
+  .session-page,
+  .new-session-page {
+    padding: 20px 12px !important;
+  }
+
+  .dashboard-section {
+    margin-bottom: 24px !important;
+  }
+
+  .dashboard-section-header {
+    align-items: stretch !important;
+  }
+
+  .dashboard-section-header button {
+    width: 100%;
+  }
+
+  .dashboard-session-card {
+    padding: 14px !important;
+    gap: 10px !important;
+  }
+}
