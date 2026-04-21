@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@clerk/nextjs/server";
 import { callAI, parseJSON } from "@/lib/ai";
 import { getSessionsCollection } from "@/lib/mongodb";
-import { JudgeVerdict, Highlight, SessionDocument } from "@/types";
+import type { JudgeVerdict, Highlight, SessionDocument } from "@/types/index";
 import { ObjectId } from "mongodb";
 import { Resend } from "resend";
 

@@ -1,3 +1,5 @@
+import type { ObjectId } from "mongodb";
+
 // ============================================================
 // Session Status
 // ============================================================
@@ -60,7 +62,7 @@ export interface JudgeVerdict {
 // Session Document (MongoDB)
 // ============================================================
 export interface SessionDocument {
-  _id?: string;
+  _id?: ObjectId;
   orgId: string;
   personA_userId: string;
   personB_userId?: string;

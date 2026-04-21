@@ -1,5 +1,5 @@
 import { MongoClient, Db, Collection } from "mongodb";
-import { SessionDocument } from "@/types";
+import type { SessionDocument } from "@/types/index";
 
 const MONGODB_URI = process.env.MONGODB_URI!;
 const DB_NAME = "arbitration";

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@clerk/nextjs/server";
 import { getSessionsCollection } from "@/lib/mongodb";
-import { SessionDocument } from "@/types";
+import type { SessionDocument } from "@/types/index";
 
 export async function POST(req: NextRequest) {
   try {

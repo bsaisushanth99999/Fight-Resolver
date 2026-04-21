@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@clerk/nextjs/server";
 import { getSessionsCollection } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
-import { SessionStatus, Highlight } from "@/types";
+import type { SessionStatus, Highlight } from "@/types/index";
 import { neutralizeText } from "@/lib/neutralize";
 import { Resend } from "resend";
 
